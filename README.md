@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# Play Compass
+
+**Play Compass** is a personal site and portfolio for Jennifer Walker, showcasing playful projects, immersive experiences, and game design for adults.
+
+## 🌟 Vision
+
+A thoughtful and joyful platform that:
+- Highlights creative projects like puzzle trails and interactive art
+- Positions Jennifer as a thought leader on adult play and exploration
+- Serves as a hub for playful concepts, blog posts, and experimental ideas
+
+## 🗂️ Tech Stack
+
+- [Next.js](https://nextjs.org/) with App Router
+- [Tailwind CSS](https://tailwindcss.com/)
+- TypeScript
+- Deployed via Vercel (planned)
+
+## 🧩 Pages
+
+- `/` – Homepage
+- `/about` – About the vision + creator
+- `/projects` – Showcase of selected projects
+- `/contact` – Contact form (coming soon)
+
+## 🚧 Roadmap
+
+- [ ] Polish copy and design of all pages
+- [ ] Add contact form
+- [ ] Add project card layout
+- [ ] Create playground or blog section
+- [ ] Deploy to Vercel
+>>>>>>> 8dc14aa (Initial commit from Create Next App)
