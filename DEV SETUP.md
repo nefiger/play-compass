@@ -5,13 +5,13 @@
 ```bash
 git clone <your-repo-url>
 cd play-compass
-pnpm install
+npm install
 ```
 
 ## ▶️ 2. Run the Dev Server
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 If you see styling issues:
