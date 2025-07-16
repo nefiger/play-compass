@@ -17,6 +17,7 @@ export default function Home() {
         <nav className="space-x-6 text-[#F4A261] text-sm font-medium">
           <Link href="/projects">Projects</Link>
           <Link href="/about">About</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/contact">Contact</Link>
         </nav>
       </header>
