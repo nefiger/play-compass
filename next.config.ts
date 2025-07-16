@@ -1,12 +1,12 @@
-/** @type {import('next').NextConfig} */
+import nextMdx from '@next/mdx';
+const withMDX = nextMdx({ extension: /\.mdx?$/ });
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['yourdomain.com'], // if using external images
+    domains: ['yourdomain.com'],
   },
-  experimental: {
-    // appDir: true,  // already enabled by default in new projects
-  },
-}
+  pageExtensions: ['ts', 'tsx', 'mdx'],
+};
 
-module.exports = nextConfig
+export default withMDX(nextConfig);
