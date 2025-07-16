@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center bg-cream text-forest font-sans">
 
-      <section className="relative flex flex-col items-center text-center py-16 px-6 w-full overflow-hidden">
+      <section id="hero" className="relative flex flex-col items-center text-center py-16 px-6 w-full overflow-hidden">
         <Image
           src="/assets/logo.svg"
           alt="Play Compass logo"
