@@ -25,6 +25,10 @@ Rich components like `<VideoEmbed />` and `<NewsletterForm />` can be used insid
 
 To add a new post, create `your-post.mdx` with the front matter above and write Markdown/MDX content.
 
+File names should be **kebab-case** and become the post slug. For example, `my-first-post.mdx` will be available at `/blog/my-first-post`.
+
+Each post should include alt text for images and can embed components from `src/components/mdx`.
+
 ## Testing
 
 Run lint, tests and build before committing:

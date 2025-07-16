@@ -1,6 +1,8 @@
 jest.mock('next-mdx-remote/rsc', () => ({
   compileMDX: jest.fn(async () => ({ frontmatter: {}, content: 'test' }))
 }));
+jest.mock('remark-gfm', () => () => null);
+jest.mock('remark-slug', () => () => null);
 jest.mock('@/mdx-components', () => ({
   useMDXComponents: () => ({})
 }));
@@ -18,5 +20,6 @@ describe('MDX posts loader', () => {
     const post = await getPost(posts[0].slug);
     expect(post.slug).toBe(posts[0].slug);
     expect(post.content).toBeTruthy();
+    expect(Array.isArray(post.headings)).toBe(true);
   });
 });

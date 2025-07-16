@@ -1,6 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { compileMDX } from 'next-mdx-remote/rsc';
 import matter from 'gray-matter';
+import remarkGfm from 'remark-gfm';
+import remarkSlug from 'remark-slug';
+import type { Pluggable } from 'unified';
 import fs from 'fs/promises';
 import path from 'path';
 import { MDXRemoteProps } from 'next-mdx-remote/rsc';
@@ -20,6 +23,7 @@ export interface Post {
   slug: string;
   meta: PostMeta;
   content: React.ReactElement;
+  headings: string[];
 }
 
 const POSTS_PATH = path.join(process.cwd(), 'src/app/blog');
@@ -47,14 +51,21 @@ export async function getPost(slug: string): Promise<Post> {
     source,
     options: {
       parseFrontmatter: true,
-      mdxOptions: { remarkPlugins: [], rehypePlugins: [] },
+      mdxOptions: {
+        remarkPlugins: [remarkGfm as Pluggable, remarkSlug as Pluggable],
+        rehypePlugins: [],
+      },
     },
     components: useMDXComponents({}) as MDXRemoteProps['components'],
   });
+
+  const { content: mdxContent } = matter(source);
+  const headings = Array.from(mdxContent.matchAll(/^##\s+(.*)$/gm)).map(m => m[1]);
 
   return {
     slug,
     meta: frontmatter,
     content,
+    headings,
   };
 }
