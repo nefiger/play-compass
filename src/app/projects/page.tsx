@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects | Play Compass',
+  description: 'Explore selected playful projects created by Play Compass.',
+};
+
 export default function ProjectsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">

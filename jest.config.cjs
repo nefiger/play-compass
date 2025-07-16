@@ -8,6 +8,6 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1'
   },
-  transformIgnorePatterns: ['/node_modules/(?!(next-mdx-remote)/)'],
+  transformIgnorePatterns: ['/node_modules/(?!(next-mdx-remote|rehype-slug)/)'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts']
 };

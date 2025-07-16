@@ -4,6 +4,7 @@ jest.mock('next-mdx-remote/rsc', () => ({
 jest.mock('@/mdx-components', () => ({
   useMDXComponents: () => ({})
 }));
+jest.mock('rehype-slug', () => () => {});
 
 import { getAllPosts, getPost } from '../getPosts';
 
@@ -18,5 +19,6 @@ describe('MDX posts loader', () => {
     const post = await getPost(posts[0].slug);
     expect(post.slug).toBe(posts[0].slug);
     expect(post.content).toBeTruthy();
+    expect(Array.isArray(post.headings)).toBe(true);
   });
 });
