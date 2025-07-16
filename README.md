@@ -25,6 +25,8 @@ Rich components like `<VideoEmbed />` and `<NewsletterForm />` can be used insid
 
 To add a new post, create `your-post.mdx` with the front matter above and write Markdown/MDX content.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed blog guidelines.
+
 ## Testing
 
 Run lint, tests and build before committing:

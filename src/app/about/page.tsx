@@ -1,3 +1,19 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About | Play Compass',
+  description: 'Learn about the playful philosophy behind Play Compass.',
+  openGraph: {
+    title: 'About | Play Compass',
+    description: 'Learn about the playful philosophy behind Play Compass.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About | Play Compass',
+    description: 'Learn about the playful philosophy behind Play Compass.',
+  },
+};
+
 export default function AboutPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">

@@ -1,3 +1,19 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects | Play Compass',
+  description: 'A sampling of playful projects and experiments from Play Compass.',
+  openGraph: {
+    title: 'Projects | Play Compass',
+    description: 'A sampling of playful projects and experiments from Play Compass.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Projects | Play Compass',
+    description: 'A sampling of playful projects and experiments from Play Compass.',
+  },
+};
+
 export default function ProjectsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">

@@ -11,6 +11,7 @@ const config = {
         cream: '#FFFCF4',
         forest: '#508072',
         peach: '#F4A261',
+        peachDark: '#9c4a21',
       },
       fontFamily: {
         sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -21,9 +22,14 @@ const config = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-8px)' },
         },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
       },
       animation: {
         float: 'float 4s ease-in-out infinite',
+        fadeIn: 'fadeIn 2s ease-in-out',
       },
     },
   },

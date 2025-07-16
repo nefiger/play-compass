@@ -18,5 +18,6 @@ describe('MDX posts loader', () => {
     const post = await getPost(posts[0].slug);
     expect(post.slug).toBe(posts[0].slug);
     expect(post.content).toBeTruthy();
+    expect(Array.isArray(post.toc)).toBe(true);
   });
 });
