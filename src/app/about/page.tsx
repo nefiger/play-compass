@@ -7,14 +7,13 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-semibold">About Play Compass</h1>
-      <p className="mt-4 text-gray-700">
-        Play Compass is a playful studio, a portfolio, and a provocation.
-        We design interactive experiences, puzzle trails, and creative games that reconnect adults to wonder, exploration, and collaboration.
+    <div className="max-w-3xl mx-auto px-4 py-12">
+      <h1 className="text-3xl font-semibold mb-4">Hi, I’m Jen</h1>
+      <p className="text-gray-700 mb-4">
+        I’ve always described my secret side mission in life as figuring out how to get adults to play more — to have more fun.
       </p>
-      <p className="mt-4 text-gray-700">
-        Created by Jennifer Walker, Play Compass is a growing collection of game concepts, experimental ideas, and submissions to festivals and public spaces — from immersive installations to WhatsApp-based quests.
+      <p className="text-gray-700">
+        Play Compass is a personal home for that mission: a space to share playful ideas, showcase projects, and reflect on what grown-up play makes possible. I design playful experiences that help people reconnect with their curiosity and lightness — whether at festivals, in teams, or anywhere fun might want to sneak in.
       </p>
     </div>
   )
