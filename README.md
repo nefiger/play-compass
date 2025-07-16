@@ -1,5 +1,17 @@
 # Play Compass
 
+Play Compass is Jennifer Walker's hub for playful projects and interactive experiments.
+Built with **Next.js** and **Tailwind CSS**.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Pages
+=======
 **Play Compass** is a personal site and portfolio for Jennifer Walker, showcasing playful projects, immersive experiences, and game design for adults.
 
 ## 🌟 Vision
@@ -19,15 +31,5 @@ A thoughtful and joyful platform that:
 ## 🧩 Pages
 
 - `/` – Homepage
-- `/about` – About the vision + creator
-- `/projects` – Showcase of selected projects
-- `/contact` – Contact form (coming soon)
-
-## 🚧 Roadmap
-
-- [ ] Polish copy and design of all pages
-- [ ] Add contact form
-- [ ] Add project card layout
-- [ ] Create playground or blog section
-- [ ] Deploy to Vercel
->>>>>>> 8dc14aa (Initial commit from Create Next App)
+- `/about` – About the creator
+- `/projects` – Selected projects
