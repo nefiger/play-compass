@@ -25,7 +25,7 @@ export default function Home() {
           Helping grown-ups find their way back to wonder
         </h1>
         <p className="mt-4 text-lg text-forest max-w-md">
-          Discover puzzles, playgrounds, and playful adventures designed for curious adults. Navigate your next experience with purpose—and a wink.
+          Discover puzzles, playgrounds, and playful adventures designed for curious adults. Navigate your next experience with purpose — and a wink.
         </p>
         <Image
           src="/assets/dotted-arrow.svg"
@@ -35,6 +35,7 @@ export default function Home() {
           className="absolute bottom-0 right-4 w-24 md:w-32 animate-bounce"
         />
       </section>
+
 
       <section className="mt-12 max-w-5xl w-full px-4 grid gap-8 md:grid-cols-3 text-center">
         <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
@@ -59,6 +60,19 @@ export default function Home() {
           <span>Come play</span>
           <Image src="/assets/Arrow.svg" alt="arrow" width={24} height={24} className="w-5 h-5" />
         </Link>
+      </section>
+
+      <section className="mt-16 bg-white w-full py-12 px-6">
+        <h2 className="text-3xl font-semibold text-center mb-4">Why Play?</h2>
+        <p className="max-w-3xl mx-auto text-center text-gray-700 mb-4">
+          I believe that play is not optional — it’s fundamental. As kids, it’s how we learn. As adults, it’s how we remember to be curious, connected, and human.
+        </p>
+        <p className="max-w-3xl mx-auto text-center text-gray-700">
+          But somewhere along the way, play gets boxed up, labelled “childish”, or replaced with the endless push for productivity. The result? Burnout, disconnection, and a creeping loss of joy.
+        </p>
+        <p className="max-w-3xl mx-auto text-center text-gray-700 mt-4">
+          Play Compass exists to gently challenge that. To create structured invitations into flow, curiosity, and fun — because adults deserve spaces to play too.
+        </p>
       </section>
 
     </main>

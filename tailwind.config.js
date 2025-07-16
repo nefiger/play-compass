@@ -8,9 +8,10 @@ const config = {
   theme: {
     extend: {
       colors: {
-        cream: '#FFFCF4',
-        forest: '#508072',
-        peach: '#F4A261',
+        cream: '#B7E4C7', // mint
+        forest: '#4B5D67', // deep green
+        peach: '#F4A261', // coral
+        ochre: '#E9C46A',
       },
       fontFamily: {
         sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
