@@ -17,7 +17,9 @@
     "next": "15.4.1",
     "next-mdx-remote": "^5.0.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "remark-gfm": "^4.0.1",
+    "remark-slug": "^7.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

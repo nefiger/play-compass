@@ -1,6 +1,12 @@
 // src/app/page.tsx
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Play Compass',
+  description: 'Helping grown-ups find their way back to wonder.'
+};
 
 export default function Home() {
   return (
@@ -15,12 +21,15 @@ export default function Home() {
           className="w-48 md:w-60 mb-6 animate-float"
           priority
         />
-        <h1 className="text-4xl md:text-5xl font-bold text-peach max-w-xl">
+        <h1 className="text-5xl md:text-6xl font-bold text-peach max-w-xl">
           Helping grown-ups find their way back to wonder
         </h1>
+        <p className="mt-4 text-lg text-forest max-w-md">
+          Discover puzzles, playgrounds, and playful adventures designed for curious adults. Navigate your next experience with purpose—and a wink.
+        </p>
         <Image
           src="/assets/dotted-arrow.svg"
-          alt=""
+          alt="dotted arrow"
           width={150}
           height={80}
           className="absolute bottom-0 right-4 w-24 md:w-32 animate-bounce"
