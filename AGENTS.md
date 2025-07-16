@@ -27,5 +27,8 @@ This repository hosts the **Play Compass** website built with Next.js and Tailwi
 - Rich media can be embedded using React components exported via `mdx-components.tsx`.
 - The blog index (`src/app/blog/page.tsx`) lists posts by date, and individual post pages render the MDX content and use the front matter for SEO metadata.
 
+## MDX Migration Plan
+See `docs/MDX_MIGRATION_PLAN.md` for the full plan to migrate existing posts and implement MDX support across the blog.
+
 ## Keeping Instructions Updated
 Edit this file whenever the workflow changes. The agent reads it before working on tasks, so keep guidelines clear and current.
